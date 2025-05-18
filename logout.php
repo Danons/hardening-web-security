@@ -1,8 +1,22 @@
 <?php
 session_start();
-// TODO C2-3: Hapus seluruh data sesi sebelum destroy
+
+// Unset all session variables
+$_SESSION = array();
+
+// Delete the session cookie
+if (ini_get("session.use_cookies")) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), '', time() - 42000,
+        $params["path"], $params["domain"],
+        $params["secure"], $params["httponly"]
+    );
+}
+
+// Destroy the session
 session_destroy();
-// TODO C2-4: Regenerasi ID sesi untuk menonaktifkan sesi lama
-header('Location: index.php');
+
+// Redirect to login page
+header("Location: login.php");
 exit;
 ?>
