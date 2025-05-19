@@ -6,11 +6,11 @@
 This is mandatory project from my lecturer to finish CLO (Course Learning Outcome) 2-4 on System Security Lessons Semester 6th in Telkom University 
 
 This web server is included with protection from :
-•	Configuration HTTPS on Web Server.
-•	Implementing Salting Technique on login data.
-•	Implementing Hash Function on password data.
-•	Securing Input from SQL Injection and Buffer Overflow.
-•	Securing Web Server from XSS (Cross Site Scripting).
+#### •	Configuration HTTPS on Web Server.
+#### •	Implementing Salting Technique on login data.
+#### •	Implementing Hash Function on password data.
+#### •	Securing Input from SQL Injection and Buffer Overflow.
+#### •	Securing Web Server from XSS (Cross Site Scripting).
 
 
 This project also collaborated with Artificial Intelligence as a helper to troubleshooting the problem
